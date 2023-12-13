@@ -1,0 +1,63 @@
+public class Employee {
+
+    //Write a Java program to create a class called "Employee" with a name,
+    // job title, and salary attributes, and methods to calculate and update salary.
+
+    String Name;
+    String JobTitle;
+    int Salary;
+
+    Employee(String Name, String JobTitle, int Salary){
+
+        this.Name = Name;
+        this.JobTitle = JobTitle;
+        this.Salary = Salary;
+
+    }
+
+    public void GetName(){
+
+        this.Name = Name;
+        System.out.println(Name);
+    }
+
+    public void SetName(String Name){
+
+        this.Name = Name;
+
+    }
+
+    public void GetJobTitle(){
+
+        this.JobTitle = JobTitle;
+        System.out.println(JobTitle);
+
+    }
+
+    public void SetJobTitle(String JobTitle){
+
+        this.JobTitle = JobTitle;
+
+    }
+
+    public void GetSalary(){
+
+        this.Salary = Salary;
+        System.out.println(Salary);
+    }
+
+    public void SetSalary(int Salary){
+
+        this.Salary = Salary;
+        System.out.println("Your salary was changed to: " + this.Salary);
+    }
+
+    void MonthlyPay(){
+
+        int MonthSalary = ((Salary * 8) * 20);
+        System.out.println("Your month salary is: " + MonthSalary);
+
+    }
+
+
+}
